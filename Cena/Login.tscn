@@ -1,15 +1,16 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Script/Login.cs" type="Script" id=1]
 
 [node name="Login" type="HBoxContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HTTPRequestRe" type="HTTPRequest" parent="."]
-
-[node name="HTTPRequestEn" type="HTTPRequest" parent="."]
+[node name="HTTP_Send" type="HTTPRequest" parent="."]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 510.0
@@ -71,7 +72,7 @@ caret_blink_speed = 0.5
 margin_top = 286.0
 margin_right = 126.0
 margin_bottom = 310.0
-text = "Senha"
+text = "Password"
 align = 1
 editable = false
 selecting_enabled = false
@@ -86,11 +87,11 @@ margin_top = 314.0
 margin_right = 126.0
 margin_bottom = 318.0
 
-[node name="BtnLogar" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="BtnLogin" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 margin_top = 322.0
 margin_right = 126.0
 margin_bottom = 342.0
-text = "Logar"
+text = "Login"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 margin_left = 514.0
@@ -126,7 +127,7 @@ secret_character = "$"
 caret_blink = true
 caret_blink_speed = 0.5
 
-[node name="EditSenha" type="LineEdit" parent="VBoxContainer2/HBoxContainer/VBoxContainer"]
+[node name="EditPassword" type="LineEdit" parent="VBoxContainer2/HBoxContainer/VBoxContainer"]
 margin_top = 286.0
 margin_right = 167.0
 margin_bottom = 310.0
@@ -147,11 +148,11 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BtnCadastro" type="Button" parent="VBoxContainer2/HBoxContainer/VBoxContainer"]
+[node name="BtnRegistration" type="Button" parent="VBoxContainer2/HBoxContainer/VBoxContainer"]
 margin_top = 322.0
 margin_right = 167.0
 margin_bottom = 342.0
-text = "Cadastrar"
+text = "Registration"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer2/HBoxContainer"]
 margin_left = 171.0
@@ -166,3 +167,5 @@ margin_right = 510.0
 margin_bottom = 600.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/BtnLogin" to="." method="_on_BtnLogin_pressed"]
+[connection signal="pressed" from="VBoxContainer2/HBoxContainer/VBoxContainer/BtnRegistration" to="." method="_on_BtnRegistration_pressed"]

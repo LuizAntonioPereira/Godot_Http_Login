@@ -1,0 +1,6 @@
+C:\Users\Cliente\Documents\GitHub\Godot_Http_Login\.mono\temp\obj\Tools\Godot_Http_Login.csprojAssemblyReference.cache
+C:\Users\Cliente\Documents\GitHub\Godot_Http_Login\.mono\temp\obj\Tools\Godot_Http_Login.csproj.CoreCompileInputs.cache
+C:\Users\Cliente\Documents\GitHub\Godot_Http_Login\.mono\temp\bin\Tools\Godot_Http_Login.dll
+C:\Users\Cliente\Documents\GitHub\Godot_Http_Login\.mono\temp\bin\Tools\Godot_Http_Login.pdb
+C:\Users\Cliente\Documents\GitHub\Godot_Http_Login\.mono\temp\obj\Tools\Godot_Http_Login.dll
+C:\Users\Cliente\Documents\GitHub\Godot_Http_Login\.mono\temp\obj\Tools\Godot_Http_Login.pdb
